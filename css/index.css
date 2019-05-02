@@ -19,12 +19,12 @@ body {
 #imagem-perfil img:hover {
     cursor: pointer;
 }
-#logo img {
+.logo img {
     height: 3em;
     float: left;
     margin-left: 1em;
 }
-#logo img:hover {
+.logo img:hover {
     cursor: pointer;
 }
 #drop-down-perfil {
@@ -84,5 +84,11 @@ button {
     height: 2em;    
 }
 button:hover {
-    cursor: pointer;]
+    cursor: pointer;
+}
+.opcoes h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
 }

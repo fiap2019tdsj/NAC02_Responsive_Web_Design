@@ -1,0 +1,39 @@
+.container {
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudo {
+    margin-top: 3%;
+    text-align: left;
+}
+
+.listaConteudo li {
+    margin: 5%;
+}
+
+.listaConteudo img {
+    float: right;
+    margin: 0 2%;
+}
+
+.chatbot {
+    position: fixed;
+    height: 5%;
+    width: 25%;
+    background-color: #D76A19;
+    bottom: 0;
+    right: 0;
+}
+
+.chatbot h2 {
+    font-size: 1.5em;
+    float: right;
+}
