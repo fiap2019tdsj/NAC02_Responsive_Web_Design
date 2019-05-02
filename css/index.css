@@ -11,9 +11,21 @@ body {
     width: 100%;
     background-color: #28CFCF;
 }
-#imagem-perfil img{
+#imagem-perfil img {
+    height: 3em;
+    float: right;
+    margin-right: 1em;
+}
+#imagem-perfil img:hover {
+    cursor: pointer;
+}
+#logo img {
     height: 3em;
     float: left;
+    margin-left: 1em;
+}
+#logo img:hover {
+    cursor: pointer;
 }
 #drop-down-perfil {
     float: right;
@@ -24,12 +36,11 @@ body {
     height: 1.5em;
 }
 .opcoes {
-    width: 58em;
+    width: 54em;
     margin: 6em auto;
 }
 .opcao {
     width: 15em;
-    height: 19em;
     background-color: #F8E2D1;
     float: left;
     margin-right: 4em;
@@ -57,18 +68,20 @@ body {
     text-align: left;
     padding-left: 1em;
     padding-right: 1em;
+    font-size: 0.9em;
 }
 .opcoes .opcao li {
-    /* margin: 1em 0 1em ; */
+    margin: 1em 0 0 1em;
+    list-style-type: disc;
 }
 button {
     border-radius: 0 0 1em 1em;
     background-color: #D76A19;
     border: 0;
     position: relative;
-    top: 1.2em;
+    top: 2.1em;
     width: 12em;
-    height: 2em;     
+    height: 2em;    
 }
 button:hover {
     cursor: pointer;]
