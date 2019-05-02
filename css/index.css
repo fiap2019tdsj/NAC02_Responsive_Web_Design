@@ -13,8 +13,7 @@ body {
 }
 #imagem-perfil img{
     height: 3em;
-    float: right;
-    margin-right: 1em
+    float: left;
 }
 #drop-down-perfil {
     float: right;
@@ -25,18 +24,21 @@ body {
     height: 1.5em;
 }
 .opcoes {
-    width: 100%;
-    margin-top: 5em;
+    width: 58em;
+    margin: 6em auto;
 }
 .opcao {
     width: 15em;
     height: 19em;
-    /* background-color: #F8E2D1; */
-    background-color: aqua;
+    background-color: #F8E2D1;
     float: left;
-    margin-left: 4em;
-    border-radius: 1em;
+    margin-right: 4em;
+    border-radius: 1.2em;
     text-align: center;
+    border: solid 0.1em #D76A19;
+}
+.opcao:last-child{
+    margin-right: 0;
 }
 .opcoes .opcao .titulo {
     width: 100%;
@@ -45,22 +47,29 @@ body {
     text-align: center;
     border-radius: 1em 1em 0 0;
 }
-.opcoes .opcao .titulo h3 {
-    padding-top: 1em;
+.opcoes .opcao .titulo h1 {
+    padding-top: 0.5em;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 .opcoes .opcao ul {
-    margin-top: 1em;
     height: 14em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .opcoes .opcao li {
-    height: 1.45em;
+    /* margin: 1em 0 1em ; */
 }
-.opcoes .opcao button {
+button {
     border-radius: 0 0 1em 1em;
     background-color: #D76A19;
     border: 0;
     position: relative;
     top: 1.2em;
     width: 12em;
-    height: 2em;        
+    height: 2em;     
+}
+button:hover {
+    cursor: pointer;]
 }
