@@ -16,7 +16,11 @@ h1 {
 }
 
 .listaConteudo li {
-    margin: 5%;
+    padding: 1em;
+}
+.listaConteudo li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
 }
 
 .listaConteudo img {
@@ -28,9 +32,11 @@ h1 {
     position: fixed;
     height: 5%;
     width: 25%;
-    background-color: #D76A19;
+    background-color: #0E9DDD;
     bottom: 0;
     right: 0;
+    border-top: solid 0.01em #E8E8E8;
+    border-left: solid 0.01em #E8E8E8;
 }
 
 .chatbot h2 {
