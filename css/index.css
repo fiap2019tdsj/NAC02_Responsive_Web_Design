@@ -206,10 +206,20 @@ h2 {
     border-top: solid #E8E8E8 0.01em;
     border-left: solid #E8E8E8 0.01em;
 }
-.listaConteudo li:hover:last-child {
+.listaConteudo li:active {
+    background-color: #511313;
+    color: #E8E8E8;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 900;
+    border-bottom: solid #E8E8E8 0.01em;
+    border-top: solid #E8E8E8 0.01em;
+    border-left: solid #E8E8E8 0.01em;
+}
+/* .listaConteudo li:hover:last-child {
     border-bottom: none;
     border-left: none;
-}
+} */
 
 .listaConteudo img {
     float: right;
@@ -223,6 +233,21 @@ h2 {
     float: left;
     width: 66%;
 }
+.alinha-conteudo div {
+    display: none;
+}
+.alinha-conteudo div:target {
+    display: block;
+}
+/* #capitulo1 {
+    display: none;
+}
+#capitulo2 {
+    display: none;
+}
+#capitulo3 {
+    display: none;
+} */
 .alinha-conteudo {
     float: left;
     padding: 0.5em 2em 5em 2em;

@@ -1,15 +1,15 @@
-$(function(){
+// $(function(){
 
-    $(".listaConteudo").css("display", "none");
-    $(".listaConteudo#conteudo1").addClass("active");
+//     $("alinha-conteudo div").css("display", "none");
+//     $("alinha-conteudo div#capitulo1").addClass("active");
 
-    $("a").on("click", function( e ){         
-        e.preventDefault();
+//     $("a").on("click", function( e ){         
+//         e.preventDefault();
         
-    	$(".conteudo").removeClass("active");
-        var id = $(this).attr("href"); 
-        $("#"+id+"").addClass("active");
-        
-    });
-});
-console.log(conteudo);
+//     	$(".alinha-conteudo div").removeClass("active");
+//         var id = $(this).attr("href"); 
+//         $("#"+id+"").addClass("active");        
+//     });
+// });
+
+// console.log(capitulo1);
