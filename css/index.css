@@ -14,6 +14,70 @@ body {
     background-color: rgb(0, 0, 0);
 } */
 
+/* Início login */
+.corpo-login {
+    position: relative;
+    width:100%;
+    height:30em;
+}
+.container-login {
+    left: 50%;
+    top: 50%;
+    margin-left: -15em;
+    margin-top: -5em;
+    position: absolute;
+    width: 30em;
+    height: 15em;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 1em;
+}
+#login {
+    margin: 2em 3em;
+    height: 11em;
+}
+#login h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-bottom: 0.5em;
+}
+#login form label {
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-left: 2em;
+    vertical-align: -webkit-baseline-middle;
+}
+#login form p {
+    padding: 0.5em 0;
+    height: 2em;
+}
+#login form p input {
+    float: right;
+    margin-right: 2em;
+    height: 2em;
+    background-color: #511313;
+    padding: 0 1em;
+    border: none;
+    border-radius: 1em;
+    width: 35%;
+    border: 0.1em;
+}
+#login form #btn-entrar:hover {
+    border: 0.1em solid;
+}
+input:-webkit-autofill { 
+    -webkit-box-shadow: 0 0 0px 1000px #511313 inset;
+    -webkit-text-fill-color: #E8E8E8;
+    width: 35%;
+}
+/* #login form p input:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: 0.5s;
+} */
+
+
+/* Fim login */
+
 /* Início do topo */
 .fundo {
     width: 100%;
@@ -101,21 +165,24 @@ body {
     /* width: 60em;
     margin: 3em auto; */
     float: left;
+    border: solid 0.01em;
+    margin-bottom: 1em;
 }
 .opcao img {
     width: 3em;
 }
 .opcao {
-    width: 33.33%;
+    width: 33.26%;
     float: left;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.25);
+    margin: 0.05em 0.05em 0.05em 0.01em;
 }
 .opcao:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: #511313;
     cursor: not-allowed;
-    transition: all 0.5s;
-    text-decoration: underline;
+    transition: 0.5s;
+   
 }
 /* .opcoes > :first-child {
     border-bottom: none ;
@@ -183,20 +250,45 @@ h2 {
     text-align: left;
 } */
 
-#conteudo-portugues {
+#resumo-portugues {
     text-align: left;
     width: 20em;
     background-color: rgba(255, 255, 255, 0.25);
     float: left;
-    border-right: solid 0.01em;
+    border: solid 0.01em;
+}
+#resumo-matematica {
+    text-align: left;
+    width: 20em;
+    background-color: rgba(255, 255, 255, 0.25);
+    float: left;
+    border: solid 0.01em;
+}
+#resumo-algoritimo {
+    text-align: left;
+    width: 20em;
+    background-color: rgba(255, 255, 255, 0.25);
+    float: left;
+    border: solid 0.01em;
 }
 
-.listaConteudo li {
+.lista-resumo li {
     padding: 1em;
     color: #E8E8E8;
 }
 
-.listaConteudo li:hover {
+.lista-resumo li:hover {
+    background-color: #511313;
+    color: #E8E8E8;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 900;
+    border-bottom: solid #E8E8E8 0.01em;
+    border-top: solid #E8E8E8 0.01em;
+    border-left: solid #E8E8E8 0.01em;
+    width: 90%;
+}
+.lista-resumo li:active {
     background-color: #511313;
     color: #E8E8E8;
     cursor: pointer;
@@ -206,22 +298,12 @@ h2 {
     border-top: solid #E8E8E8 0.01em;
     border-left: solid #E8E8E8 0.01em;
 }
-.listaConteudo li:active {
-    background-color: #511313;
-    color: #E8E8E8;
-    cursor: pointer;
-    transition: all 0.5s;
-    font-weight: 900;
-    border-bottom: solid #E8E8E8 0.01em;
-    border-top: solid #E8E8E8 0.01em;
-    border-left: solid #E8E8E8 0.01em;
-}
-/* .listaConteudo li:hover:last-child {
+/* .lista-resumo li:hover:last-child {
     border-bottom: none;
     border-left: none;
 } */
 
-.listaConteudo img {
+.lista-resumo img {
     float: right;
     margin: 0 0 0 2%;
     width: 2em;
@@ -229,14 +311,20 @@ h2 {
 /* Fim da parte da lista de conteúdo de português */
 
 /* Inicio conteúdo do capítulo */
-.conteudo {
+.resumo-capitulo {
     float: left;
     width: 66%;
 }
-.alinha-conteudo div {
+.alinha-resumo div {
     display: none;
 }
-.alinha-conteudo div:target {
+.alinha-resumo div:target {
+    display: block;
+}
+.resumo div {
+    display: none;
+}
+.resumo div:target {
     display: block;
 }
 /* #capitulo1 {
@@ -248,11 +336,11 @@ h2 {
 #capitulo3 {
     display: none;
 } */
-.alinha-conteudo {
+.alinha-resumo {
     float: left;
     padding: 0.5em 2em 5em 2em;
 }
-.alinha-conteudo h3 {
+.alinha-resumo h3 {
     font-size: 2em;
     font-weight: 900;
     text-align: center;
@@ -298,6 +386,23 @@ h2 {
     margin: -0.3em 0;
 }
 /* Fim chatbot */
+
+/* Padina de conteudo */
+.conteudo-completo {
+    width: 100%;
+    padding-top: 3em;
+}
+.conteudo-completo #resumo-portugues{
+    position: fixed;
+}
+.conteudo-completo .alinha-resumo {
+    margin-left: 20em;
+}
+.conteudo-completo .resumo-capitulo {
+    width: 100%;
+}
+
+/* fim da pagina de conteudo */
 
 
 teste{
