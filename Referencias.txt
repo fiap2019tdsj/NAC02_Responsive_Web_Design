@@ -7,3 +7,9 @@ https://colorlib.com/preview/#slim
 http://thrivesolo.com/
 
 https://coolors.co/0e9ddd-e8e8e8-e6d5ca-e87e53-d54b65
+
+https://nandomoreira.dev/blog/usando-o-selector-target-para-criar-modal-apenas-com-css
+
+https://willianjusten.com.br/convertendo-um-class-based-component-para-react-hooks/
+
+https://jsfiddle.net/ouxbqLpw/10/

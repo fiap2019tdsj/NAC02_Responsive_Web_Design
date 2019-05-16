@@ -158,8 +158,18 @@ input:-webkit-autofill {
     z-index: -1;
     margin-top: 3.1em;
 }
-#drop-down-perfi li {
-    height: 1.5em;
+.icones-materias {
+    float: left;
+    width: 100%;
+    margin: 3em 0em;
+}
+.icones-materias .materia {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.icones-materias .materia img {
+    width: 6em;
 }
 .opcoes {
     /* width: 60em;
@@ -213,17 +223,7 @@ input:-webkit-autofill {
     padding: 0.5em 0 0 0;
     list-style-type: disc;
 }
-button {
-    border-radius: 0 0 1em 1em;
-    border: 0;
-    position: relative;
-    top: 2.1em;
-    width: 12em;
-    height: 2em;    
-}
-button:hover {
-    cursor: pointer;
-}
+
 h1 {
     font-size: 3em;
     font-weight: bold;
@@ -256,6 +256,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0.25);
     float: left;
     border: solid 0.01em;
+    height: 100%;
 }
 #resumo-matematica {
     text-align: left;
@@ -287,6 +288,7 @@ h2 {
     border-top: solid #E8E8E8 0.01em;
     border-left: solid #E8E8E8 0.01em;
     width: 90%;
+    padding: 0.99em 1em;
 }
 .lista-resumo li:active {
     background-color: #511313;
@@ -308,6 +310,20 @@ h2 {
     margin: 0 0 0 2%;
     width: 2em;
 }
+.resumo-capitulo .alinha-resumo a {
+    border-radius: 0 0 1em 1em;
+    border: 0;
+    position: relative;
+    top: 2.1em;
+    width: 5em;
+    height: 1em; 
+    float: right;
+    background-color: #511313; 
+}
+.resumo-capitulo .alinha-resumo a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 /* Fim da parte da lista de conteúdo de português */
 
 /* Inicio conteúdo do capítulo */
@@ -315,18 +331,21 @@ h2 {
     float: left;
     width: 66%;
 }
+
+/* .resumo div {
+    display: none;
+}
+.resumo div:target {
+    display: block;
+} */
+
 .alinha-resumo div {
     display: none;
 }
 .alinha-resumo div:target {
     display: block;
 }
-.resumo div {
-    display: none;
-}
-.resumo div:target {
-    display: block;
-}
+
 /* #capitulo1 {
     display: none;
 }
@@ -346,7 +365,9 @@ h2 {
     text-align: center;
     padding: 1em;
 }
-.active { display: block !important }
+.active { 
+    display: block !important 
+}
 /* Fim do conteúdo do capítulo */
 
 /* Início chatbot */
@@ -394,6 +415,8 @@ h2 {
 }
 .conteudo-completo #resumo-portugues{
     position: fixed;
+    height: 100%;
+    
 }
 .conteudo-completo .alinha-resumo {
     margin-left: 20em;
