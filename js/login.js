@@ -7,7 +7,7 @@ btnEntrar.addEventListener("click", function(e) {
     e.preventDefault();
 
     if (rm.value != "12345") {
-        alert("RM incorreto.");
+        alert("RM inválido.");
         rm.focus();
         return false;
     }
