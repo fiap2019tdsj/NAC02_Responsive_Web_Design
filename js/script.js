@@ -1,15 +1,23 @@
- $(function(){
+ var alinha_resumo = document.querySelector(".alinha-resumo");
+ var divsResumo = alinha_resumo.querySelectorAll("div");
 
-     $("alinha-resumo div").css("display", "none");
-     $("alinha-resumo div#capitulo1").addClass("active");
-
-     $("a").on("click", function( e ){         
-         e.preventDefault();
-        
-     	$(".alinha-resumo div").removeClass("active");
-         var id = $(this).attr("href"); 
-         $("#"+id+"").addClass("active");        
-     });
+ divsResumo.forEach(function(a) {
+    a.style.display = "none";
  });
 
-//console.log(capitulo1);
+ var elementoA = document.querySelectorAll("a");
+
+ elementoA.forEach(function(e) {
+    e.addEventListener("click", function(evt) {
+        evt.preventDefault;
+
+        divsResumo.forEach(function(a) {
+            a.classList.remove("active");
+        });
+
+        var id = this.getAttribute("href");
+        var conteudoSelecionado = document.querySelector(id);
+
+        conteudoSelecionado.classList.add("active");
+    });
+ });
